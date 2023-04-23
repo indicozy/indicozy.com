@@ -1,16 +1,20 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import Container from "./layouts/Container.astro";
 ---
 
-<header class="w-screen fixed top-0 left-0">
-  <div class="bg-red-300 h-20 flex justify-between items-center">
-    <h2>indicozy</h2>
-    <nav>
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-    </nav>
-  </div>
+<header class="w-screen fixed top-0 left-0 bg-cblue text-bg">
+  <Container>
+    <div class="h-20 flex justify-between items-center">
+      <h2 class="font-com">indicozy</h2>
+      <nav>
+        <HeaderLink href="/">Blog</HeaderLink>
+        <HeaderLink href="/blog">Blog</HeaderLink>
+        <HeaderLink href="/about">About</HeaderLink>
+      </nav>
+      <div></div>
+    </div>
+  </Container>
 </header>
 <div class="h-20"></div>
